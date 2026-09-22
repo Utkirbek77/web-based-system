@@ -5,6 +5,3 @@ itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.3
 Werkzeug==3.1.8
-
-## To install packages from that file on another machine:
-## pip install -r requirements.txt
