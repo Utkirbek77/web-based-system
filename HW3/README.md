@@ -1,37 +1,74 @@
-# HW2 - Add Todo App Completion Check Feature
+# HW3 – Todo App with Edit Functionality
 
-## Student Information
+## Overview
 
-- Name: Utkirbek
-- Student ID: 23012866
+This project is a Todo application built with Flask and Flask-SQLAlchemy. It uses an SQLite database to store Todo items so that the data remains available after the server is restarted.
 
-## Assignment
+## Features
 
-I added a completion check feature to the existing Todo app.
+- **Add Todo:** Add a new Todo item with a title and description.
+- **View Todos:** Display Todo items stored in the database.
+- **Toggle Completion:** Mark a Todo item as completed or incomplete.
+- **Edit Todo:** Edit the title and description of an existing Todo item.
+- **Delete Todo:** Delete a Todo item from the list.
+- **Persistent Storage:** Todo items remain saved after restarting the server.
 
-- Add a todo
-- Delete a todo
-- Mark a todo as completed
-- Unmark a completed todo
-- Keep the completion status after refreshing the page
+## Technologies Used
 
-## Execution Environment
+- Python
+- Flask
+- Flask-SQLAlchemy
+- SQLite
+- HTML and CSS
 
-- Python: 3.9 or higher
-- Flask: 3.1.3
-- Werkzeug: 3.1.8
-- Jinja2: 3.1.6
-- click: 8.5.0
-- itsdangerous: 2.2.0
-- MarkupSafe: 3.0.3
-- blinker: 1.9.0
+## How to Run the Application
 
-The packages are managed using the `requirements.txt` file in the root directory of the repository.
+1. Open a terminal in the `HW3` directory.
+2. Activate your virtual environment.
+3. Install the required dependencies if necessary:
 
-## How to Run
+   ```bash
+   pip install -r ../requirements.txt
+   ```
 
-Activate the virtual environment from the root folder of the repository.
+4. Start the Flask application:
 
-```bash
-venv\Scripts\Activate.ps1
-```
+   ```bash
+   flask --debug run
+   ```
+
+5. Open the following address in your browser:
+
+   `http://127.0.0.1:5000`
+
+The SQLite database is created automatically when the application starts.
+
+## Screenshots
+
+### 1. Todo List Screen
+
+This screenshot shows the Todo list, including the Todo titles, descriptions, and available actions.
+
+
+
+![Todo List Screen](images/home.png)
+
+### 2. Edit Todo Screen
+
+This screenshot shows the edit page, where an existing Todo item's title and description can be modified.
+
+
+
+![Edit Todo Screen](images/edit.png)
+
+### 3. Data Persistence After Restarting the Server
+
+This screenshot shows that the Todo items remain in the list after stopping and restarting the Flask server.
+
+
+![Todo List After Server Restart](images/restart.png)
+
+## Database
+
+The application uses SQLite and Flask-SQLAlchemy to store Todo items. The database is generated automatically when the application runs. The database file is excluded from the GitHub repository because it contains local application data.
+
