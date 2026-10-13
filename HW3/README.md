@@ -1,5 +1,10 @@
 # HW3 – Todo App with Edit Functionality
 
+## Student Information
+
+- Name: Utkirbek
+- Student ID: 23012866
+
 ## Overview
 
 This project is a Todo application built with Flask and Flask-SQLAlchemy. It uses an SQLite database to store Todo items so that the data remains available after the server is restarted.
@@ -42,6 +47,17 @@ This project is a Todo application built with Flask and Flask-SQLAlchemy. It use
    `http://127.0.0.1:5000`
 
 The SQLite database is created automatically when the application starts.
+
+## Testing
+
+The following functions were tested:
+
+1. Added a Todo item with a title and description.
+2. Verified that Todo items appeared on the list.
+3. Toggled a Todo item between completed and incomplete.
+4. Edited an existing Todo item's title and description.
+5. Deleted a Todo item.
+6. Restarted the Flask server and verified that saved Todo items remained in the database.
 
 ## Screenshots
 
