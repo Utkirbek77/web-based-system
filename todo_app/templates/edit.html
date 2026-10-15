@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Todo{% endblock %}
+
+{% block content %}
+<h2>할 일 수정</h2>
+
+<form method="post">
+    <input type="text" name="todo" placeholder="할 일" value="{{ todo.text }}" required>
+
+    <input type="text" name="note" placeholder="설명" value="{{ todo.note or '' }}">
+
+    <button type="submit">저장</button>
+</form>
+
+<p>
+    <a href="{{ url_for('index') }}">목록으로</a>
+</p>
+{% endblock %}
